@@ -3,7 +3,8 @@
   "compilerOptions": {
     "baseUrl": "./",
     "paths": {
-      "@/*": ["./src/*"]
+      "@/*": ["./src/*"],
+      "idb-keyval": ["node_modules/idb-keyval/dist/index.d.ts"]
     },
     "isolatedModules": true
   },
