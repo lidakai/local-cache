@@ -60,3 +60,9 @@ import { onDataUpdate } from "@lidakai/local-cache";
 ```
 
 
+### 示例
+<img width="1216" alt="Snipaste_2024-04-08_11-07-09" src="https://github.com/lidakai/local-cache/assets/23355645/fec84ff2-2def-4ae8-beb7-eecd37df9d2b">
+
+
+
+
