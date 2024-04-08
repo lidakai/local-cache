@@ -1,10 +1,13 @@
 {
   "name": "@lidakai/local-cache",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "jsnext:source": "./src/index.ts",
   "types": "./dist/types/index.d.ts",
   "main": "./dist/lib/index.js",
   "module": "./dist/es/index.js",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "prepare": "modern build && husky install",
     "dev": "modern dev",
@@ -34,6 +37,7 @@
     "dist/"
   ],
   "dependencies": {
+    "@types/eventemitter3": "^2.0.2",
     "@types/lodash-es": "^4.17.8",
     "eventemitter3": "^5.0.1",
     "idb-keyval": "^6.2.1",

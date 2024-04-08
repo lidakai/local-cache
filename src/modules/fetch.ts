@@ -17,7 +17,7 @@ type FetchHandler = (
 
 type BodyInit = ArrayBuffer | Blob | string;
 
-interface FetchOptions extends RequestInit {
+export interface FetchOptions extends RequestInit {
   body?: BodyInit;
 }
 
@@ -68,7 +68,7 @@ function createFetchProxy(): FetchHandler {
 /**
  * @description main
  * */
-export function watchFetch(config: Partial<DeaultConfig> = {}) {
+export function watchFetch(config: Partial<DeaultConfig> = {}): void {
   const c = mergeConfig(config);
   updateConfig(c); // config 更新
   setCustomStore(c); // 初始化并冻结config
