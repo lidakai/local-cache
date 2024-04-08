@@ -35,3 +35,28 @@ export const deaultConfig: DeaultConfig = {
 };
 
 ```
+
+
+### 使用方式
+```
+import { watchInit } from '@lidakai/local-cache';
+
+watchInit() // 创建监听
+
+
+
+// 需要更新数据处
+import { onDataUpdate } from "@lidakai/local-cache";
+   /*
+    *  url 就是 api 的 相对地址
+    *  例如： https://www.baidu.com/user/info?id=123 =>  /user/info?id=123
+    */
+    onDataUpdate((data) => {
+      if (data.result && data.url === url) {
+        // 设置更新后的数据
+        console.log(data.result)
+      }
+    });
+```
+
+
